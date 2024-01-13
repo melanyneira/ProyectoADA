@@ -1,0 +1,309 @@
+
+body {
+    background: linear-gradient(to bottom, #e8f1f9, #e8f1f9, #ffffff, #ffffff);
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* ESTILO FORMULARIO */
+
+h1 {
+    background-color:  #8DB1D8;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    font-style: bold;
+    margin-top: 50px;
+    height: 69px;
+}
+
+.container{
+    margin-top: -50px;
+    
+}
+
+.contacto {
+    color: white;
+    text-align: center;
+    font-family: 'Gloock', sans-serif;
+    text-transform: none;
+    padding-top: 23px;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+form { 
+    width: 45%;
+    height: 42rem;
+    background: #fff;
+    position: relative;
+    border-radius: 10px; 
+    box-shadow: 2px 2px 5px rgba(48, 47, 47, 0.1);
+    margin: auto;
+}
+
+.form {
+    margin: 0 auto
+}
+
+form .grupo {
+    position: relative;
+    margin: 40px;
+    font-weight: bold;
+    font-family: 'Lato';
+    border: 1px solid rgb(232, 229, 229);
+    border-radius: 8px 8px 5px 5px;
+    margin-top: 48px;
+}
+
+.campos{
+    font-size: 19px;
+}
+
+input,
+textarea {
+    background: none;
+    color: #4d4c4c;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    font-weight: bold;
+    color:  rgb(0, 0, 0);
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    font-family: 'Lato';
+    font-weight: bold;
+    position: absolute;
+    top: -25px;
+    font-size: 17px;
+    color:  rgb(0, 0, 0);
+}
+
+label {
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+input:focus~.barra::before,
+textarea:focus~.barra::before {
+    width: 100%;
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%; 
+    
+}
+
+.barra::before {
+    content: '';
+    height: 2.3px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, rgb(151, 187, 225),#F1E2F0);
+    transition: 0.3s ease all;
+    left: 0%;
+}
+
+.boton-submit {
+    background: linear-gradient(to right,  #cd9ae8, bisque);
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 50%;
+    margin-top: 20px;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+}
+
+.boton-submit:hover {
+    background: bisque;
+    color: #c834f1;
+    border-radius: 20px 20px 20px 20px;
+    border: 1px black;
+}
+
+@media screen and (max-width:1100px) {
+    form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:300px) {
+    form {
+        width: 100%;
+    }
+}
+
+footer {
+    margin-top: 200px;
+}
+
+.formulario-contacto{
+    padding: 10rem;
+   
+}
+
+/* BOTÓN FINAL */
+/* .custom-button {
+    height: 45px;
+    width: 100px;
+    text-align: center;
+    margin-left: 42%;
+    
+    display: inline-block;
+    position: relative;
+    background-color: #ffffff; 
+    color: #000000;    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border-color: rgb(59, 58, 58);
+    font-family: 'Gloock', sans-serif;
+  }
+  
+  .custom-button::before,
+  .custom-button::after {
+    content: '';
+    position: absolute;
+    transition: all 0.5s;
+  }
+  
+  .custom-button::before {
+    width: 2rem;
+    height: 2rem;
+    right: 2rem;
+    top: 1rem;
+    border-radius: 50%;
+    background-color:rgb(151, 187, 225); 
+    filter: blur(12px);
+  }
+  
+  .custom-button::after {
+    width: 3rem;
+    height: 3rem;
+    right: 2rem;
+    top: 1.5rem;
+    border-radius: 50%;
+    background-color: rgb(151, 187, 225); 
+    filter: blur(12px);
+  }
+  
+  .custom-button:hover {
+    border-color: #CDB4DB; Cambia el color del borde al hacer hover */
+    /* color: rgb(173, 126, 174); 
+    text-decoration: none;
+  }
+  
+  .custom-button:hover::after {
+    right: -0rem;
+    top: 1.5rem;
+  }
+  
+  .custom-button:hover::before {
+    right: 3rem;
+    top: 0.5rem;
+  }
+  .clicked::before {
+    right: 3rem;
+    top: 0.5rem;
+}
+
+.clicked::after {
+    right: -0rem;
+    top: 1.5rem;
+}
+ */
+
+ footer{
+    margin-top: -100px;
+ }
+
+
+ .custom-button {
+    height: 45px;
+    width: 100px;
+    text-align: center;
+    margin-left: 42%;
+    display: inline-block;
+    position: relative;
+    background-color: #ffffff; /* Cambia el color de fondo según tus preferencias */
+    color: #000000; /* Cambia el color del texto según tus preferencias */
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border-color: rgba(4, 4, 4, 0.867);
+    font-family: 'Gloock', sans-serif;
+    transition: all 0.5s;
+}
+
+.custom-button::before,
+.custom-button::after {
+    content: '';
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.custom-button::before {
+    width: 2rem;
+    height: 2rem;
+    right: 2rem;
+    top: 1rem;
+    border-radius: 50%;
+    background-color: rgb(151, 187, 225);
+    filter: blur(12px);
+}
+
+.custom-button::after {
+    width: 3rem;
+    height: 3rem;
+    right: 2rem;
+    top: 1.5rem;
+    border-radius: 50%;
+    background-color: rgb(151, 187, 225);
+    filter: blur(12px);
+}
+
+
+

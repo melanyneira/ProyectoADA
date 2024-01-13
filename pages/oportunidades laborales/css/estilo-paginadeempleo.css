@@ -1,0 +1,279 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: #e4d9e384;
+	font-family: 'Open sans';
+}
+
+.wrap{
+	width: 700px;
+	max-width: 90%;
+	margin: 30px auto;
+}
+
+ul.tabs{
+	width: 100%;
+	background: #363636;
+	list-style: none;
+	display: flex;
+	border-radius: 20px 20px 0px 0px;
+}
+
+ul.tabs li{
+	width: 18%;
+}
+
+ul.tabs li a{
+	font-family: 'Gloock', serif; 
+	color: #ffffff;
+	width: 132px;
+	text-decoration: none;
+	font-size: 16px;
+	text-align: center;
+	display: block;
+	padding: 20px 0px;
+}
+
+.active{
+	background: rgb(192, 130, 195);
+	border-radius: 20px 20px 0px 0px;
+
+}
+
+ul.tabs li a .tab-text{
+	margin-left: 2px;
+}
+
+.secciones{
+	width: 100%;
+	background: #fff;
+	border-radius: 0px 0px 20px 20px;
+}
+
+.secciones article{
+	padding: 30px;
+}
+
+.secciones article p{
+	text-align: justify;
+}
+
+
+@media screen and (max-width: 700px){
+	ul.tabs li{
+		width: none;
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+}
+
+@media screen and (max-width: 450px){
+	ul.tabs li a{
+		padding: 15px 0px;
+	}
+
+	ul.tabs li a .tab-text{
+		display: none;
+	}
+
+	.secciones article{
+		padding: 20px;
+	}
+}
+
+/* Información */
+
+.peluqueria{
+	font-style: normal;
+}
+
+em{
+  margin-right: 2px;
+}
+
+ul{
+	list-style-type: square;
+}
+
+.lista{
+	margin-bottom: 3px;
+	font-size: 16.7px;
+	color: rgba(0, 0, 0, 0.961);
+}
+
+.subtitulo{
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+strong{
+	color: #000000f1;
+}
+
+.iconos{
+	display: inline-block;
+	margin-bottom: 19px; 
+	vertical-align: middle;
+	padding-right: 6px;
+	margin-top: 1px;
+}
+
+.redes{
+	position: relative;
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.961);
+	font-size: 17px;
+	font-family: 'Lato';
+	margin-left: 40px;
+	margin-top: -38px;
+}
+
+p{
+    color: rgba(0, 0, 0, 0.929);
+}
+
+label {
+    font-weight: bold;
+}
+
+
+input[type="file"] {
+    border: 2px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+
+input[type="submit"] {
+    background-color: rgb(189, 117, 193);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#botón-final {
+	position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 85px;
+    height: 34.2px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.884);
+    border-radius: 6px;
+    border: 1px solid black;
+    margin-left: 39%;
+    font-family: 'Bebas Neue', sans-serif;
+	margin-top: -47px
+}
+
+/* Establecimiento */
+
+#subtitulo-est{
+	font-family: 'Gloock', sans-serif;
+	font-size: 20.5px; 
+	font-weight: 600;
+	margin-left: 25px;
+	float: right;
+	
+}
+
+#texto-est{
+	padding-left: 330px;
+	text-align: center;
+	font-size: 17.4px;
+	font-family: 'Lato';
+	font-weight: 200;
+	margin-top: -210px;
+}
+
+#texto-est2{
+	margin-top: 20px;
+	text-align: left;
+	font-size: 17.8px;
+	font-family: 'Lato';
+	font-weight: 200;
+
+}
+
+#lugar{
+	margin-top: 8px;
+	height: 240px;
+	width: 320px;
+	border-radius: 80px 8px 80px 8px;
+	float: left;
+	position: relative;
+	background-color: #000;
+	overflow: hidden;
+	transition: transform .5s;
+	filter: brightness(94%);
+}
+
+#lugar:hover{
+	transform: translateY(-5px);
+	filter: brightness(100%);
+	
+}
+
+#lugar::before{
+	content: '';
+	position: absolute;
+	inset: 0;
+	transform: scaleY(0.75);
+	transform-origin: bottom;
+	background: linear-gradient(transparent, rgb(0, 0, 0, 0.4) #000);
+	transition: transform 0.25s;
+}
+
+#lugar:hover::before{
+	transform: scaleY(1);
+}
+
+#mapa-est{
+	margin-top: -10px;
+	margin-left: 0px;
+
+}
+
+/* Anunciante */
+
+.subtitulo-an{
+	font-family: 'Gloock';
+	font-size: 28px;
+}
+
+.marco-an{
+    border: 1px solid #dedbdbd0; 
+    box-shadow: 2px 2px 5px rgba(48, 47, 47, 0.1); 
+    padding: 6px; 
+    border-radius: 10px; 
+    background-color: #fff;
+	margin-right: -7px ;
+}
+
+#cajita-an{
+	font-size: 17.3px;
+	border: 1px solid #dedbdbd0; 
+    box-shadow: 2px 2px 5px rgba(48, 47, 47, 0.1); 
+    padding: 6px; 
+    border-radius: 10px; 
+    background-color: #fff;
+}
+
+#texto-an{
+	font-family: 'Lato';
+	max-width: 500px;
+	font-weight: 200;
+	display: flex;
+	gap: 15px;
+	text-align: left;
+	max-width: 720px;
+}

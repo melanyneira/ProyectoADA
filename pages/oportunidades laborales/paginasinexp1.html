@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente de salón</title>
+
+    <link rel="icon" href="images/ADA.png">
+
+    <link rel="stylesheet" href="css/estilo-sinexp.css">
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrap">
+    <ul class="tabs">
+        <li><a href="#tab1"><span class="fa fa-home"></span><span class="tab-text">Información</span></a></li>
+        <li><a href="#tab2"><span class="fa fa-group"></span><span class="tab-text">Establecimiento</span></a></li>
+        <li><a href="#tab3"><span class="fa fa-briefcase"></span><span class="tab-text">Anunciante</span></a></li>
+       
+    </ul>
+
+<!-- INFORMACIÓN -->
+
+<div class="row ">
+    <div class="col-md-3 centrar ">
+      
+        <div class="secciones">
+        <article id="tab1">
+        <p class="subtitulo">Requisitos</p>
+        <p style="font-size: 19px;"><strong>Peluquería Alba</strong> está buscando:</p>    
+            <ul style="margin-left: 19px; font-size: 17.5px;">
+                <li>Mujeres de 20 - 45 años.</li>
+                <li>Con conocimientos anteriores en peluquería.</li>
+                <li>Con disponibilidad horaria en el turno mañana (8 - 12 hs)</li>
+                <li>Que resida por la zona.</li>
+                <li>No es necesario que tengas experiencia, nosotras estamos dispuestas a capacitarte.</li>
+             </ul>
+
+        <br>
+        <p style="font-size: 17.5px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aut facilis cupiditate maxime consequatur quo, molestias velit debitis ipsa aliquam eveniet! Nisi officiis unde doloremque iste amet quod necessitatibus illo quia temporibus repellat minus dicta, consectetur soluta incidunt obcaecati, veritatis velit corrupti saepe nihil quasi asperiores culpa sit porro praesentium? Dolore consectetur at ad placeat, corrupti nihil enim quidem provident voluptatum non labore rem, ut doloribus soluta nostrum amet mollitia incidunt laborum nisi velit officia molestiae voluptatibus voluptatem? Accusantium quibusdam temporibus ad aut itaque hic, impedit saepe minus mollitia explicabo autem molestiae perferendis obcaecati ab corrupti dolorem possimus cumque delectus?</p> 
+
+        <br>
+        <p class="subtitulo">Contacto</p>
+
+      
+        <p class="redes"><img class="iconos" src="images/mail.png" alt="" style="height: 32px;">Albasalon@gmail.com</p>
+
+        <a class="redes" href="https://www.instagram.com/instagram/"><img class="iconos" src="images/instagram.png" alt="" style="height: 36px; margin-left: -2px;">Alba.peluqueria</a>
+
+        <a class="redes" href="https://www.facebook.com/"><img class="iconos" src="images/facebook.png" alt="" style="height: 28px; margin-left: 2px;">Alba Peluquería</a>
+       
+
+        <form action="/procesar_archivo" method="post" enctype="multipart/form-data">
+            <br>
+            <label for="archivo">O adjunta tu CV aquí:</label> <br>
+            <input type="file" id="archivo" name="archivo" accept=".pdf">
+            <input type="submit" value="Subir PDF">
+        </form>
+        </article>
+
+        <!-- ESTABLECIMIENTO -->
+
+        
+        <article id="tab2">
+            <img id="lugar" src="images/Salon.jpg">
+            <p id="subtitulo-est">Este podría ser tu próximo lugar de trabajo</p>
+
+            <p id="texto-est"><br><strong>Alba peluquería</strong> cuenta con más de 25 años de trayectoria, la mayor parte de las personas que formaron parte de nuestro crecimiento fueron mujeres, por lo que queríamos retribuir una parte de su esfuerzo y dedicación, compartiendo nuestro lugar de trabajo con mujeres que busquen una oportunidad para seguir creciendo. <br><br> Ofrecemos un buen ambiente laboral, trabajo en equipo, capacitación, buena retribución económica y por sobre todo, acompañamiento. </p>
+
+            <br><br>
+            <iframe id="mapa-est" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.3709119453547!2d-58.43394992439255!3d-34.62006597294847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca45091ae80d%3A0xe72dc8a1b16e9531!2sPeluquerias%20Para%20Damas!5e0!3m2!1ses-419!2sar!4v1695396108570!5m2!1ses-419!2sar" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+
+        <!-- ANUNCIANTE -->
+
+        <article id="tab3">
+            <p class="subtitulo">María Alba Riveros</p>
+
+        <div id="cajita-an">
+            <p id="texto-an"><img src="images/perfilestilista.jpg" class="marco-an" style=" width: 200px; "> " Aliquam incidunt similique, et quasi ducimus quos aut autem non dignissimos dicta sit provident, voluptatibus ut blanditiis perspiciatis cum, vel temporibus minima enim. Asperiores omnis placeat officiis a tenetur sit recusandae, reprehenderit neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea numquam odio voluptate. Aliquam incidunt similique, et quasi ducimus quos aut autem non dignissimos dicta sit provident, voluptatibus ut blanditiis perspiciatis cum, vel temporibus minima enim. Asperiores omnis placeat officiis a tenetur sit recusandae, reprehenderit neque. Tempora quibusdam, perferendis id ratione culpa dolorum! Nemo, animi?"
+           
+            
+        </div>
+
+        <a class="redes" href="https://www.linkedin.com/in/"><img class="iconos" src="images/linkedin.png" alt="" style="height: 29px;">https://www.linkedin.com/in/alba-riveros</a></p>
+    
+    </article>
+        
+    </div>
+</div>
+
+</body>
+</html>

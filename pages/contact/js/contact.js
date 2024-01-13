@@ -1,0 +1,1 @@
+let irAConfirmacion = () => {window.location.href = "confirmacion.html";}

@@ -1,0 +1,368 @@
+
+#carrusel {
+    height: 450px;
+    width: 59%;
+    margin-top: 3.6rem;
+    margin-left: 26px;
+    margin-right: 25px;
+    box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.799);
+    display: block;
+    float: left;
+    border-radius: 4rem;
+}
+#img-carru1 {
+    background-size: cover;
+    width: 100%;
+    height:534px;
+    border-radius: 4rem;
+}
+#img-carru2{
+    background-size: cover;
+    width: 90%;
+    height: 534px;
+    border-radius: 4rem;
+}
+#img-carru3{
+    width: 100%;
+    height: 534px;
+    border-radius: 4rem;
+}
+
+.parrCarr {
+    color: white;
+    text-shadow: 0px 4px 6px rgb(0, 0, 0);
+    font-family: 'Lato';
+    font-size: 16px;
+}
+
+.seccion2 {
+    margin-left: 30px;
+
+}
+
+.caja1 {
+    width: 32%;
+    height: 233px;
+    margin-top: 3.6rem;
+    margin-right: 30px;
+    padding-left: 2px;
+    background-image: url(/img/poderejecutivo2.jpeg);
+    background-size: cover;
+    border-radius: 6rem 6rem 0px 0px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.537);
+    float: right;
+    flex-direction: row;
+    transition: transform 0.8s;
+    transform-origin: right;
+
+}
+
+.caja2 {
+    width: 32%;
+    height: 247px;
+    margin-top: 3.2em;
+    margin-right: 30px ;
+    background-image: url(/img/leyolimpia2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 6rem 6rem 9px 9px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.537);
+    display: flex;
+    float: right;
+    flex-direction: row;
+    transition: transform 0.8s;
+    transform-origin: right;
+
+}
+
+.caja1 a {
+    text-decoration: none;
+}
+
+.caja2 a {
+    text-decoration: none;
+}
+
+.caja1 h2 {
+    height: 44px;
+    color: rgb(240, 234, 234);
+    background-color: rgba(0, 0, 0, 0.815) /*  #252424be */;
+    border-radius: 0px 0px 26px 26px ;
+    font-size: 12.1px;
+    padding-top: 1%;
+    margin-top: 44%;
+    padding-bottom: 2%;
+    text-decoration: none;
+    display: block;
+    flex-direction: row;
+    font-family: 'Lato';
+    text-align: center;
+    margin-left: -2px;
+}
+
+.caja2 h2 {
+    width: 107.6%;
+    height: 40px;
+    color: rgb(240, 234, 234);
+    font-size: 12.7px;
+    background-color: rgba(0, 0, 0, 0.815) /*  #252424be */;
+    border-radius: 0px 0px 26px 26px ;
+    padding-top: 2%;
+    margin-top: 50%;
+    padding-bottom: 2%;
+    text-decoration: none;
+    display: block;
+    flex-direction: row;
+    font-family: 'Lato';
+    text-align: center;
+}
+
+.caja1 img {
+    width: 55%;
+    height: 90%;
+    padding-top: 10px;
+    margin-right: 2px;
+}
+
+
+
+.caja3 {
+    width: 20%;
+    height: 300px;
+    margin-top: 5%;
+    margin-left: 4%;
+    border: 1px solid rgba(7, 5, 5, 0);
+    display: block;
+    float: left;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px 0.7px rgba(0, 0, 0, 0.498);
+    border-radius: 10px;
+    transition: transform 0.8s;
+    transform-origin: center;
+}
+
+.caja3:hover {
+    transform: scaleX(1.06) scaleY(1.02);
+}
+
+.caja3 h4 {
+    color: black
+}
+
+
+#link {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 1px 4px 8px rgb(0, 0, 0);
+
+}
+
+
+/* Estilo para el encabezado */
+
+
+#divisor {
+    height: 45px;
+    margin-top: 140px;
+    color: #fffffff1;
+    padding: 30px;
+    background: black;
+   /*  background:  linear-gradient(to top, rgb(141, 177, 216),  rgb(175, 211, 250)); */
+}
+
+#divisor2 {
+    margin-top: 20px;
+    height: 45px;
+    color: #fffffff1;
+    padding: 30px;
+    background: black;
+   /*  background:  linear-gradient(to top, rgb(141, 177, 216),  rgb(175, 211, 250)); */
+}
+
+#divisor h2 {
+    margin-top: -20px;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 26px;
+}
+
+#divisor2 h2 {
+    margin-top: -20px;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 26px;
+}
+
+/* Estilo para el contenedor de noticias */
+#noticias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 22px; 
+   /*  padding-right: 10px; */
+ 
+}
+
+
+/* Estilo para cada tarjeta de noticia */
+.noticia {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px; 
+    height: 425px;
+    width: calc(20.98% - 10px);
+    /* Mostrar tres noticias por fila */
+    padding: 20px;
+    transition: transform 0.8s;
+    transform-origin: center;
+    border-radius: 8.5px 8.5px 8.5px 8.5px;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+
+}
+
+#noticia2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 60px;
+    padding-bottom: 15px;
+    padding-left: 22px;
+    padding-right: 13px;
+    width: calc(100% - 1px);
+    transform-origin: center;
+}
+ 
+/* Estilo para el título de la noticia */
+
+.noticia h2 {
+    position: relative;
+    max-width: 300px;
+    font-family: 'Gloock';
+    font-size: 16px;
+    margin-top: 173px;
+    max-height: 10%;
+    overflow: auto;
+    color: black;
+    transition: color 0.3s; 
+}
+
+.noticia h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.noticia:hover h2 {
+    color: rgb(141, 177, 216);
+}
+
+
+/* Estilo para la descripción de la noticia */
+.noticia p {
+    font-family: 'Lato';
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    margin-top: 8px;
+}
+
+/* Estilo para las imágenes de las noticias */
+.noticia img {
+    position: absolute;
+    margin-left: -20px;
+    width: 235px;
+    max-width: 100%;
+    height: 175px;
+    margin-top: -237px;
+    border-radius: 8px 8px 45px 0px;
+}
+
+.noticia:hover {
+    transform: scaleX(1.02) scaleY(1.02);
+}
+
+
+/* FILA 2 */
+
+.noticia h6 {
+    line-height: 1.5 ;
+    font-family: 'Lato';
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    margin-top: 8px;
+}
+
+.noticia .imagen2 {
+    position: absolute;
+    margin-left: -20px;
+    width: 233px;
+    max-width: 100%;
+    height: 175px;
+    margin-top: -237px;
+    border-radius: 8px 8px 45px 0px;
+}
+
+
+/* ESTILO YAMILA */
+
+.sub-carrousel{
+    font-family: 'Gloock'; 
+    font-size: 26px;
+    margin-bottom: -1px;
+}
+
+.parrCarr{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 767px) {
+    #carrusel {
+      width: 100%; /* Utiliza el ancho completo en dispositivos móviles */
+      margin: 10px 0; /* Espaciado superior e inferior */
+      border-radius: 0; /* Elimina el borde redondeado */
+    }
+  
+    #img-carru1,
+    #img-carru2,
+    #img-carru3 {
+      width: 100%; /* Haz que las imágenes ocupen el ancho completo del contenedor */
+      border-radius: 0; /* Elimina el borde redondeado */
+    }
+  
+    .seccion2 {
+      margin-left: 0; /* Ajusta el margen izquierdo */
+    }
+  
+    .caja1,
+    .caja2 {
+      width: 100%; /* Utiliza el ancho completo */
+      margin-right: 0; /* Elimina el margen derecho */
+      float: none; /* Elimina la propiedad float */
+    }
+  
+    .noticia {
+      width: 100%; /* Utiliza el ancho completo para las noticias */
+    }
+  
+    .noticia img {
+      position: static; /* Restaura la posición estática para la imagen */
+      margin: 0; /* Elimina el margen izquierdo */
+      max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+      border-radius: 0; /* Elimina el borde redondeado */
+    }
+  
+    .noticia h2 {
+      margin-top: 10px; /* Ajusta el margen superior del título */
+    }
+  
+    #lineabaja {
+      width: 100%; /* Asegura que la línea inferior ocupe el ancho completo */
+    }
+  }

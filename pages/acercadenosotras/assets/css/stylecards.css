@@ -1,0 +1,120 @@
+body {
+    background: linear-gradient(to bottom,  #ffffff, #f7fcff,#e8f1f9, #e8f1f9);
+    background-size: cover;
+    height: 6rem; /* modificar */
+}
+
+/* DECORACIONES */
+
+#puntitos{
+    float: left;
+    margin-left: 10px;
+    margin-top: -68px ;
+    height: 78px;
+ }
+ 
+ #flor{
+    width: 147px;
+    float: right;
+    margin-top: -220px;
+    margin-right: 3px;
+ }
+
+ #flor2{
+    position: absolute;
+    width: 147px;
+    float: right;
+    margin-top: 70px;
+    margin-left: 68rem;
+
+ }
+ 
+.contenedor-logos{
+    display: flex;
+    margin-top: 40px;
+
+}
+
+.logos{
+    height: 150px;
+    /* width: 60px; */
+    background-color: white;
+    border-radius: 220px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.055);
+
+}
+
+.swiper-contenedor{
+    margin-left: -10px;
+}
+
+.card{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 6px rgba(180, 180, 180, 0.507);
+    width: 160px; 
+    height: 217px;
+    min-height: 200px; 
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 8px;
+    margin-top: 10px;
+    /* margin-top: 9vh;  */
+    text-align: center;
+}
+
+.card #foto{
+    margin-top: 10px;
+    height: 92px;
+    border-radius: 220px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor{
+    width: 240px;
+    height: 205px;
+    padding-right: 0;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    float: left;
+    margin-right: 20px;
+}
+
+.nombre{
+    float: center;
+    margin-top: 11.5px;
+    font-size: 20px;
+    font-family:'Bebas Neue', sans-serif;
+}
+
+.textocargo{
+    font-family: 'Lato', sans-serif;
+    color:  #696969f1;
+    font-size: 14.2px;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: -0.7px;
+    max-width: 145px;
+    padding-left: 16px;
+}
+
+.contenedor-redes .redes{
+    height: 26px;
+    width: 26px;
+    padding-left: 0px;
+    float: center;
+    border-radius: 200px;
+    border: solid 1px rgb(232, 232, 232);
+    background-color: white;
+    margin-top: 10px ;
+}
+
+.card:hover .nombre {
+    color: rgb(141, 177, 216);
+}
+
+.card:hover {
+    transform: scaleX(1.02) scaleY(1.02);
+}
+

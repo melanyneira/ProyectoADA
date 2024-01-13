@@ -1,0 +1,218 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: #d9e1e484;
+	font-family: 'Open sans';
+}
+
+.wrap{
+	width: 800px;
+	max-width: 90%;
+	margin: 30px auto;
+}
+
+ul.tabs{
+	width: 100%;
+	background: #363636;
+	list-style: none;
+	display: flex;
+	border-radius: 20px 20px 0px 0px;
+}
+
+ul.tabs li{
+	width: 18%;
+}
+
+ul.tabs li a{
+	font-family: 'Gloock', serif;
+	color: #ffffff;
+	width: 150px;
+	text-decoration: none;
+	font-size: 16px;
+	text-align: center;
+	display: block;
+	padding: 20px 0px;
+}
+
+.active{
+	background:rgb(141, 177, 216);
+	border-radius: 20px 20px 0px 0px;
+}
+
+ul.tabs li a .tab-text{
+	margin-left: 8px;
+}
+
+.secciones{
+	width: 100%;
+	background: #fff;
+}
+
+.secciones article{
+	padding: 30px;
+}
+
+.secciones article p{
+	text-align: justify;
+}
+
+
+@media screen and (max-width: 700px){
+	ul.tabs li{
+		width: none;
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+}
+
+@media screen and (max-width: 450px){
+	ul.tabs li a{
+		padding: 15px 0px;
+	}
+
+	ul.tabs li a .tab-text{
+		display: none;
+	}
+
+	.secciones article{
+		padding: 20px;
+	}
+}
+
+/* Información */
+
+ul{
+	list-style-type: square;
+}
+
+.subtitulo{
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 29px;
+}
+
+.iconos{
+	display: inline-block;
+	margin-bottom: 3px; 
+	vertical-align: middle;
+	padding-right: 6px;
+}
+
+.redes{
+	display: block;
+	text-decoration: none;
+	color: rgb(26, 0, 27);
+	font-size: 18px;
+}
+
+
+
+label {
+    font-weight: bold;
+}
+
+
+input[type="file"] {
+    border: 2px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+
+input[type="submit"] {
+    background-color: rgb(141, 177, 216);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Establecimiento */
+
+#subtitulo-est{
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 27.5px;
+	float: right;
+	
+}
+
+#texto-est{
+	padding-left: 338px;
+	margin: 0 11px 0 auto; 
+	text-align: left;
+	font-size: 17.4px;
+}
+
+#lugar{
+	margin-top: 9px;
+	height: 240px;
+	width: 320px;
+	border-radius: 80px 8px 80px 8px;
+	float: left;
+	position: relative;
+	background-color: #000;
+	overflow: hidden;
+	transition: transform .5s;
+	filter: brightness(94%);
+}
+
+#lugar:hover{
+	transform: translateY(-5px);
+	filter: brightness(100%);
+	
+}
+
+#lugar::before{
+	content: '';
+	position: absolute;
+	inset: 0;
+	transform: scaleY(0.75);
+	transform-origin: bottom;
+	background: linear-gradient(transparent, rgb(0, 0, 0, 0.4) #000);
+	transition: transform 0.25s;
+}
+
+#lugar:hover::before{
+	transform: scaleY(1);
+}
+
+#mapa-est{
+	margin-left: px;
+
+}
+
+/* Anunciante */
+
+.marco-an{
+    border: 1px solid #dedbdbd0; 
+    box-shadow: 2px 2px 5px rgba(48, 47, 47, 0.1); 
+    padding: 6px; 
+    border-radius: 10px; 
+    background-color: #fff;
+	margin-right: -7px ;
+}
+
+#cajita-an{
+	font-size: 17.3px;
+	border: 1px solid #dedbdbd0; 
+    box-shadow: 2px 2px 5px rgba(48, 47, 47, 0.1); 
+    padding: 6px; 
+    border-radius: 10px; 
+    background-color: #fff;
+}
+
+#texto-an{
+	
+	display: flex;
+	gap: 15px;
+	text-align: left;
+	max-width: 720px;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente de salón</title>
+
+    <link rel="icon" href="images/ADA.png">
+
+    <link rel="stylesheet" href="css/estilo-paginadeempleo.css">
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<!-- INFORMACIÓN -->
+
+<div class="wrap">
+    <ul class="tabs">
+        <li><a href="#tab1"><span class="fa fa-home"></span><span class="tab-text">Información</span></a></li>
+        <li><a href="#tab2"><span class="fa fa-group"></span><span class="tab-text">Establecimiento</span></a></li>
+        <li><a href="#tab3"><span class="fa fa-briefcase"></span><span class="tab-text">Anunciante</span></a></li>
+       
+    </ul>
+
+    <button type="button" id="botón-final"> <img style="height: 16px; margin-top: 7px; margin-left: -55px; rotate: 180deg;" src="/pages/oportunidades laborales/images/cruz2.png"><a style="position: absolute; padding-left: 8px; margin-top: 5.2px; text-decoration: none; color: black; font-family: 'Bebas Neue';" href="/pages/oportunidades laborales/oportunidadeslaborales.html">Volver</a></button> 
+
+    <div class="secciones">
+        <article id="tab1">
+        <!-- <p class="subtitulo">Requisitos</p> -->
+        <p style="font-family:'Lato'; font-size: 18px;"><strong class="peluqueria">Peluquería Alba</strong> está buscando:</p>    
+            <ul style="font-family: 'Lato'; margin-left: 19px; margin-top: 6px;">
+                <li class="lista">Mujeres de 20 - 45 años.</li> 
+                <li class="lista">Con disponibilidad horaria en el turno mañana (8 - 12 hs)</li>
+                <li class="lista">Se valorarán conocimientos previos en colorimetría.</li>
+                 <li class="lista">Preferiblemente residir en la zona para facilitar tu desplazamiento.</li>
+                 <li class="lista">Nosotras estamos dispuestas a capacitarte y acompañar tu camino profesional.</li>
+               
+             </ul>
+
+        <br>
+        <p style="font-family: 'Lato'; font-size: 17px; margin-top: -7px; max-width: 585px;">
+
+            Estamos emocionadas por la oportunidad de incorporar a nuestro equipo una <strong style="font-family: Gloock; font-weight: 300;">Asistente de Salón</strong> con ganas de aprender y perfeccionarse en el área, alguien  proactiva y comprometida. Si no contas con experiencia profesional y estás  dispuesta a capacitarte, esta podría ser la oportunidad perfecta para vos. <br> </p>
+
+         <p style="font-family: 'Lato'; font-size: 17px; margin-top: 10px; max-width: 585px; font-weight: 100;"> Nos comprometemos a proporcionarte el apoyo necesario para que puedas desarrollar tus habilidades y crecer profesionalmente en un ambiente dinámico donde el trabajo  en  equipo es fundamental. Valoramos la creatividad y el compromiso  con la excelencia, por lo  que, si te apasiona el mundo de la belleza y crecer en un entorno profesional. <br> </p>
+            
+            <p style="font-family: 'Gloock'; font-weight: 400; margin-top: 6px; font-size: 17.5px;">¡Te animamos a postularte para unirte a nuestro equipo en Peluquería Alba! </p>
+        <br>
+        <p class="subtitulo" style="margin-bottom: 3px; margin-top: -5px;">Contacto</p>
+
+      
+       <img class="iconos" src="images/mail.png" alt="" style="height: 32px;"><p class="redes" style="margin-top: -48px;">Albasalon@gmail.com</p>
+
+        <a style="text-decoration: none" href="https://www.instagram.com/instagram/"><img class="iconos" src="images/instagram.png" alt="" style="height: 36px; margin-left: -2px; margin-top: 12px;"><p class="redes" style="margin-top: -48px;">Alba.peluqueria</p></a>
+
+        <a style="text-decoration: none;" href="https://www.facebook.com/"><img class="iconos" src="images/facebook.png" alt="" style="margin-top: 15px; height: 28px; margin-left: 2px;"><p class="redes" style="margin-top: -42px;">Alba Peluquería</p></a>
+       
+
+        <form action="/procesar_archivo" method="post" enctype="multipart/form-data">
+            <br>
+            <label style="font-family: 'Gloock'; font-size: 18px; font-weight: 300;" for="archivo">O adjunta tu CV aquí:</label> <br>
+            <input style="font-family: 'Lato'; margin-top: 10px;" type="file" id="archivo" name="archivo" accept=".pdf">
+            <input style="font-family: 'Gloock';" type="submit" value="Subir PDF">
+        </form>
+        </article>
+
+        <!-- ESTABLECIMIENTO -->
+
+        
+        <article id="tab2"> 
+            <div style="display: flex;">
+            <img id="lugar" src="images/Salon.jpg">
+            <p id="subtitulo-est" style="text-align: center; padding-left: 10px;">Este podría ser tu próximo  <br> lugar de trabajo.</p>
+</div>
+            <p id="texto-est"><br><strong style="font-family: Gloock; font-weight: 200; font-size: 16px; max-width: 50px;">Alba peluquería</strong> cuenta con más de 25 años de trayectoria, la mayor parte de las personas que formaron parte de nuestro crecimiento fueron mujeres, por lo que queríamos retribuir una parte de su esfuerzo y dedicación, compartiendo nuestro lugar de trabajo con mujeres que busquen una oportunidad para seguir creciendo. </p>
+                
+            <p id="texto-est2" style="text-align: center;">Ofrecemos un <strong style="font-family: Gloock; font-weight: 200; font-size: 16px;">buen ambiente laboral</strong>, <strong style="font-family: Gloock; font-weight: 200; font-size: 16px;">trabajo en equipo</strong>, <strong style="font-family: Gloock; font-weight: 200; font-size: 16px;">capacitación</strong>, <strong style="font-family: Gloock; font-weight: 200; font-size: 16px;">buena retribución económica</strong> y por sobre todo, acompañamiento.
+
+           Te esperamos en Doblas 303, CABA en nuestra sucursal de Caballito. A tres cuadras de la estación de Subte <strong style="font-family: Gloock; font-weight: 200; font-size: 16px;">Acoyte</strong> de la Línea A en caso de que quieras dejar tu CV de forma presencial. Te deseamos el mayor de los éxitos en tu trayectoria profesional.</p>
+
+            <br><br>
+            <iframe id="mapa-est" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.3709119453547!2d-58.43394992439255!3d-34.62006597294847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca45091ae80d%3A0xe72dc8a1b16e9531!2sPeluquerias%20Para%20Damas!5e0!3m2!1ses-419!2sar!4v1695396108570!5m2!1ses-419!2sar" width="100%" height="290" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+
+        <!-- ANUNCIANTE -->
+
+        <article id="tab3" >
+            <p class="subtitulo-an">María Alba Riveros</p>
+
+        <div id="cajita-an" style="display: flex;">
+
+            <img src="images/perfilestilista.jpg" class="marco-an" style=" width: 200px; height: 200px; border-radius: 300px; ">
+            <p id="texto-an" style="padding-top: 16px; padding-left: 15px; max-width: 430px;"> " Como dueña de Alba Peluquería, quiero dirigirme a aquellas que han experimentado situaciones difíciles, especialmente a aquellas que han enfrentado la violencia de género. En este espacio, no solo buscamos empleados talentosos, sino también corazones fuertes y resilientes como los suyos. 
+
+                Entiendo que cada una de ustedes lleva consigo una historia única y un viaje lleno de desafíos."</p>
+                
+                <p id="texto-an" style="display:  none;">En Alba Peluquería, no solo buscamos empleadas, sino también compañeras que encuentren en nuestro espacio un refugio, una oportunidad de renacer y crecer. <br> 
+                
+                Aquí, en este pequeño rincón que llamamos hogar, queremos que se sientan seguras y apoyadas. Valoramos la fortaleza y la determinación que han demostrado, y queremos ser parte de su proceso de recuperación y empoderamiento." </p> 
+            
+        </div>
+
+        <p style="font-family: 'Gloock'; margin-top: 15px; font-size: 18px; font-weight: bold; margin-left: 10px ;">¡Contactá con el empleador!</p>
+
+        <a class="redes" style="font-family: 'Lato';" href="https://www.linkedin.com/in/"><img class="iconos" src="images/linkedin.png" alt="" style="margin-left: -30px; height: 29px; padding-top: 10px;">https://www.linkedin.com/in/alba-riveros</a>
+    
+    </article>
+        
+    </div>
+</div>
+
+</body>
+</html>
