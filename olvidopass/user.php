@@ -6,6 +6,7 @@ class User{
     private $dbPassword = "";
     private $dbName     = "logtest";
     private $userTbl    = "users";
+    private $db;
     
     public function __construct(){
         if(!isset($this->db)){
